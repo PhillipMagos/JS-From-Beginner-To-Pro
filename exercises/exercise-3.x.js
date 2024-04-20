@@ -132,8 +132,29 @@
 // console.log(theList)
 
 // project 2
-let arr1 = ['ketchup', 'soap', 'mustard', 'calendars', 'garlic bread']
-
+//1
+let arr1 = ['ketchup', 'calendars', 'garlic bread'];
+//2
 let ketchup = {
-        
+        name: "heinz",
+        model: "v2",
+        cost: 3.99,
+        quanity: 4
 }
+let soap = {
+        name: "loreal",
+        model: "v9",
+        cost: 4.99,
+        quanity: 12
+}
+let mustard = {
+        name: "heinz",
+        model: "v1",
+        cost: 9.99,
+        quanity: 5
+}
+//3
+arr1.push(mustard, ketchup, soap)
+console.log(arr1);
+//4
+console.log(arr1[5].quanity)

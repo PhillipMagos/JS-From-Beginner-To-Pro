@@ -135,12 +135,7 @@
 //1
 let arr1 = ['ketchup', 'calendars', 'garlic bread'];
 //2
-let ketchup = {
-        name: "heinz",
-        model: "v2",
-        cost: 3.99,
-        quanity: 4
-}
+?
 let soap = {
         name: "loreal",
         model: "v9",

@@ -61,34 +61,41 @@
 // console.log(output);
 
 // 4.5
-let prize = prompt("pick a number between 0 and 10");
-prize = Number(prize);
-let output = "My selection is " + prize;
+// let prize = prompt("pick a number between 0 and 10");
+// prize = Number(prize);
+// let output = "My selection is " + prize;
 
-switch(prize){
-    case 0: 
-    output += "Gold ";
-    break;
-    case 1:
-    case 2:
-        output += "You win free pizza";
-    break;
-    case 3:
-    case 4:
-    case 5:
-        output += "You win some bubble gum";
-        break;
-    case 6:
-    case 7:
-    case 8:
-        output += "You win a free bathroom break";
-        break;
-    case 9:
-    case 10:
-        output += "You win pizza with extra pepproni";
-        break;
-    default:
-        output += "You win a trip to the Bahamas";
-}
+// switch(prize){
+//     case 0: 
+//     output += "Gold ";
+//     break;
+//     case 1:
+//     case 2:
+//         output += "You win free pizza";
+//     break;
+//     case 3:
+//     case 4:
+//     case 5:
+//         output += "You win some bubble gum";
+//         break;
+//     case 6:
+//     case 7:
+//     case 8:
+//         output += "You win a free bathroom break";
+//         break;
+//     case 9:
+//     case 10:
+//         output += "You win pizza with extra pepproni";
+//         break;
+//     default:
+//         output += "You win a trip to the Bahamas";
+// }
 
-console.log(output)
+// console.log(output)
+
+// project 1
+let arr = [rock, paper, scissors]
+
+let rock = rock.Math.random();
+let paper = paper.Math.random();
+let scissors = scissors.Math.random();

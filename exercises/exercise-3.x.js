@@ -124,6 +124,165 @@
 // //3
 // let three = theList.splice(3,1,"hello World");
 // console.log(theList)
+let dog = {
+        dogName: "Javascript", 
+        weight: 2.4,
+        color: "brown", 
+        breed: "chihuahua", 
+        age: 3,
+        burglarBiter: true
+};
+
+let dogColor1 = dog["color"]
+console.log(dogColor1); // brown
+let dogColor2 = dog.color;
+console.log(dogColor2); // brown
+
+// Updating Obects
+dog["color"] = ["blue"];
+dog.weight = 2.3;
+
+dog.age = "three"
+
+let variable = "age";
+console.log(dog[variable]);
+
+variable = "breed";
+console.log(dog[variable]); // output chiuhuah
+
+dog[variable] = "dachshund";
+console.log(dog["breed"]); //daschund
+
+//Exercise 3.4
+let myCar = { carName: "Ol Reliable",
+make: "Honda",
+model: "CRV",
+price: 5000,
+year: 1999,
+color: "Blue",
+forSale: 1
+};
+
+let carColor1 = myCar["color"];
+myCar[carColor1] = "navy"
+
+// Obects in objects 
+let company = {
+        companyName: "Healthy Candy",
+        activity: "food manufacturing",
+        address: {
+                street: "2nd street",
+                number: "123",
+                zipcode: "33116",
+                city: "Miami",
+                state: "Florida"
+        },
+        yearOfEstablishment: 2021
+};
+//Access or modify one of the properties
+company.address.zipcode = "33117"
+company["address"]["number"] = "100";
+
+// pg 65 Arrays in Objects
+company = {
+        companyName: "Healthy Candy",
+        activities: ["food manufacturing", "improving kids' health", "manufacturing toys"],
+        address: {
+                street: "2nd street",
+                number: "123",
+                zipcode: "33116",
+                city: "Miami",
+                state: "Florida"
+        },
+        yearOfEstablishment: 2021
+};
+//fetch second value of activities array
+let activity = company.activities[1];
+
+//pg 66 Obects in Arrays
+let addresses = [{
+        street: "2nd street",
+        number: "123",
+        zipcode: "33116",
+        city: "Miami",
+        state: "Florida"
+},
+{
+        street: "1st West Avenue",
+        number: "5",
+        zipcode: "75001",
+        city: "Addison",
+        state: "Texas"
+}];
+
+//
+let streetName = addresses[0].street;
+
+//pg 66 Objects in arrays in objects
+company = { companyName: "Healthy Candy",
+                activities: [ "food manufacturing", "improving kids' health", "manufacturing toys"], 
+                address: [{
+                        street: "2nd street",
+                        number: "123",
+                        zipcode: "33116",
+                        city: "Miami",
+                        state: "Florida"
+                },
+                {
+                        street: "1st West Ave",
+                        number: "5",
+                        zipcode: "75001",
+                        city: "Addison",
+                        state: "Texas"
+                }],
+                yearOfEstablishment: 2021
+}
+
+let streetName1 = company.address[0].street;
+
+// exercise 3.5
+const people = { friends: []};
+const friend1 = {first: "Bob", last: "Sarge", id: 11};
+const friend2 = {first: "Anil", last: "Naidu", id: 40};
+const friend3 = {first: "Bill", last: "Bob", id: 12};
+
+//let peopleNew = { friends: [friend1, friend2, friend3]};
+people.friends.push(friend1, friend2, friend3);
+console.log(people)
+
+// pg 68 MAnipulating an array
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
+// remove first and last item
+theList.shift()
+theList.pop()
+theList.unshift("FIRST")
+theList.splice(3, 0, "hello world")
+theList.splice(2, 0, "MIDDLE")
+theList.push("LAST")
+
+// pg 68
+const inventory = []
+const item1 = {
+        name: "apple",
+        model: "green",
+        cost: 3.99,
+        quantity: 2
+}
+const item2 = {
+        name: "orange",
+        model: "orange",
+        cost: 7.99,
+        quantity: 3
+}
+const item3 = {
+        name: "onion",
+        model: "bulb",
+        cost: 1.99,
+        quantity: 5
+}
+
+inventory.push(item1, item2, item3)
+console.log(inventory[2].cost)
 // //4
 // let four = theList.splice(2,1,"MIDDLE");
 // console.log(theList);
@@ -135,7 +294,7 @@
 //1
 let arr1 = ['ketchup', 'calendars', 'garlic bread'];
 //2
-?
+
 let soap = {
         name: "loreal",
         model: "v9",
@@ -152,4 +311,4 @@ let mustard = {
 arr1.push(mustard, ketchup, soap)
 console.log(arr1);
 //4
-console.log(arr1[5].quanity)
+console.log(arr1[5].quantity)

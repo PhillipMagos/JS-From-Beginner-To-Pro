@@ -312,3 +312,34 @@ arr1.push(mustard, ketchup, soap)
 console.log(arr1);
 //4
 console.log(arr1[5].quantity)
+// 11/2/26
+// 3.1
+arr1 = ["Mild", "Bread", "Apples"];
+console.log(arr1.length)
+arr1[0] = "Bananas"
+console.log(arr1)
+
+//3.2
+arr1 = [];
+arr1[0] = "Milk"
+arr1[1] = "Bread"
+arr1[2] = "Apples"
+console.log(arr1)
+
+arr1[1] = "Bananas"
+arr1.pop();
+console.log(arr1)
+arr1.sort()
+console.log(arr1)
+let x = arr1.indexOf("Milk")
+console.log(x)
+arr1.splice(1, 0, "Carrots", "Lettuce")
+console.log(arr1)
+
+arr2 = ["Juice", "Pop"]
+
+let newArr = arr1.concat(arr2, arr2)
+console.log(newArr)
+
+let y = newArr.lastIndexOf("Pop")
+console.log(y);

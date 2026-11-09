@@ -343,3 +343,8 @@ console.log(newArr)
 
 let y = newArr.lastIndexOf("Pop")
 console.log(y);
+
+//3.3
+array = [1, 2, 3];
+newArray = [array, array, array];
+console.log(newArray[1][1])

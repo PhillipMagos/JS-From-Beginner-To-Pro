@@ -348,3 +348,27 @@ console.log(y);
 array = [1, 2, 3];
 newArray = [array, array, array];
 console.log(newArray[1][1])
+
+//3.4
+//1
+let myCar = {
+        make: "kia",
+        model: "forte",
+        year: 2013,
+        color: "grey",
+        paid: true,
+        forSale: false
+};
+//2
+let var1 = myCar.color
+console.log(var1)
+let var2 = myCar["color"] = "black"
+console.log(var2)
+console.log(myCar.color)
+//3
+let var3 = myCar["forSale"] = true;
+console.log(var3)
+//4
+let var4 = myCar["make"]
+let var5 = myCar["model"]
+console.log(var4, var5)

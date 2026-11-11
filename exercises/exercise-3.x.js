@@ -372,3 +372,25 @@ console.log(var3)
 let var4 = myCar["make"]
 let var5 = myCar["model"]
 console.log(var4, var5)
+//3.5
+let people = {
+        friends: []
+        
+}
+let a = {
+        fName: "Bob",
+        lName: "Doe",
+        id: 12
+}
+let b = {
+        fName: "Bill",
+        lName: "Bobo",
+        id: 14
+}
+let c = {
+        fName: "Joe",
+        lName: "Moe",
+        id: 16
+}
+people.friends.push(a,b,c)
+console.log(people.friends)

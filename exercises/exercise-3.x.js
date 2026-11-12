@@ -394,3 +394,39 @@ let c = {
 }
 people.friends.push(a,b,c)
 console.log(people.friends)
+
+//chapter project
+const theList =['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
+console.log(theList.shift(), theList.pop())
+console.log(theList.unshift("FIRST"))
+console.log(theList.splice(3, 0, "hello world"))
+console.log(theList.splice(2, 0, "MIDDLE"))
+console.log(theList.push("LAST"))
+
+console.log("Final result: ", theList)
+
+storeItems = []
+let itemOne = {
+        name: "Mop",
+        model: "2",
+        cost: 3.99,
+        quantity: 10
+}
+let itemTwo = {
+        name: "Soap",
+        model: "1",
+        cost: 19.99,
+        quantity: 20
+}
+let itemThree = {
+        name: "Chairs",
+        model: "9",
+        cost: 1.99,
+        quantity: 5
+}
+
+storeItems.push(itemOne, itemTwo, itemThree)
+console.log(storeItems)
+
+let abc = storeItems[2].quantity
+console.log(abc)

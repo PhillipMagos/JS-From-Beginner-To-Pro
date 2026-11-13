@@ -175,3 +175,13 @@ if(computerResult == playerResult){
 } else {
   console.log("Play again")
 }
+
+
+//4.1
+let newVar = 1;
+console.log(newVar)
+if(newVar){
+  console.log("Variable is true")
+} else {
+  console.log("New variable is false")
+}

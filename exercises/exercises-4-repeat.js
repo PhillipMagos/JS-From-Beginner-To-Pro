@@ -185,3 +185,17 @@ if(newVar){
 } else {
   console.log("New variable is false")
 }
+
+//4.2
+let prompt4 = prompt("Enter your age")
+let age = Number(prompt4);
+let messageVar;
+if (age >= 21) {
+  messageVar = "Welcome to da club"
+} else if (age > 19) {
+  messageVar = "Welcome but no drinking"
+} else {
+  messageVar = "You're denied entry"
+}
+console.log(messageVar)
+console.log("Your age is " + age + " so.." + messageVar)

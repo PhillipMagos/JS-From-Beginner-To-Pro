@@ -199,3 +199,37 @@ if (age >= 21) {
 }
 console.log(messageVar)
 console.log("Your age is " + age + " so.." + messageVar)
+
+//4.3
+let val = true;
+const func = val ? "Expression is true" : "Expression is false"
+console.log(func)
+
+//4.4
+let randomVar = Math.random();
+randomVar = randomVar * 5;
+let userInput = prompt("Enter your text");
+switch (userInput) {
+  case 0:
+    console.log("You've selected 0")
+    break;
+  case 1:
+    console.log("You've selected 1")
+    break;
+  case 2:
+    console.log("You've selected 2")
+    break;
+  case 3:
+    console.log("You've selected 3")
+    break;
+  case 4:
+    console.log("You've selected 4")
+    break;
+  case 5:
+    console.log("You've selected 5")
+    break;
+
+  default:
+    console.log("Nothing selected")
+    break;
+}

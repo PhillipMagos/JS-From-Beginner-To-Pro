@@ -206,30 +206,31 @@ const func = val ? "Expression is true" : "Expression is false"
 console.log(func)
 
 //4.4
-let randomVar = Math.random();
-randomVar = randomVar * 5;
-let userInput = prompt("Enter your text");
-switch (userInput) {
+let randomVar = Math.floor(Math.random() * 6);
+let userInput = prompt("What's your question?");
+switch (randomVar) {
   case 0:
-    console.log("You've selected 0")
+    answer = "Most definitely"
     break;
   case 1:
-    console.log("You've selected 1")
+    answer = "More likely"
     break;
   case 2:
-    console.log("You've selected 2")
+    answer = "Its 50/50"
     break;
   case 3:
-    console.log("You've selected 3")
+    answer = "Maybe"
     break;
   case 4:
-    console.log("You've selected 4")
+    answer = "Not likely"
     break;
   case 5:
-    console.log("You've selected 5")
+    answer = "Not at all"
     break;
 
   default:
-    console.log("Nothing selected")
+  answer = "Not sure."
     break;
 }
+let output = "You asked me " + userInput + ". I think that " + answer;
+console.log(output)
